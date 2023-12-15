@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add new post</title>
+  <style>
+.a {
+ background-color: #f9f9f9;
+ width : 30%;
+ height :70%;
+ margin : 0;
+ padding : 10px;
+}
+
+body {
+ background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+h2 {
+    
+      background: linear-gradient(to right, #d472db, #3722bd);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    
+  text-align: center;
+}
+
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+  
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"]
+ {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d472db, #3722bd); /* Blue to Green gradient */
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #2980b9, #45a049); /* Darker shades on hover */
+}
+ #options {
+      width: 100%;
+</style>
+</head>
+<body>
+<div class="a">
+  <h2>Add new post</h2>
+  <form >
+<select id="options" onchange="showSelected()">
+    <option value="" disabled selected>Select category</option>
+    <option value="option1">International</option>
+    <option value="option2">Domestic</option>
+    
+  </select>
+<br><br>
+    <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="price" name="price" placeholder="Full trip price" required>
+    </div>
+
+ <div class="input-group">
+        <input type="text" id="video_link" name="video_link" placeholder="Video link" required>
+    </div>
+
+  <h3>Day-1</h3>
+<select id="options" onchange="showSelected()">
+    <option value="" disabled selected>Select action</option>
+    <option value="option1">Book journey</option>
+    <option value="option2">Accomodation</option>
+    <option value="option3">Culinary Delights </option>
+    <option value="option4">Explore Attractions</option>
+     <option value="option5">Return journey</option>
+    
+  </select>
+<br><br>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+ <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="Post name" required>
+    </div>
+<br><br>
+<div class="input-group">
+      
+      <a href="#"><button class="submit-btn">Add new day</button></a>
+    </div>
+ <div class="input-group">
+      <input type="submit" value="Upload post" class="submit-btn">
+    </div>
+  
+
+</div>
+
+</body>
+</html>
+
+
